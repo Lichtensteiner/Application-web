@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+    --light-gray: #f5f6fa;
+    --dark-gray: #34495e;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--secondary-color);
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  nav {
+    background-color: var(--dark-gray);
+    padding: 0.5rem;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+  }
+  nav a:hover {
+    background-color: #46637f;
+  }
+  form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  textarea {
+    height: 100px;
+  }
+  .form-group i {
+    position: absolute;
+    left: 0.5rem;
+    top: 2.3rem;
+    color: var(--primary-color);
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #2980b9;
+  }
+  .btn-secondary {
+    background-color: var(--light-gray);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+  }
+  .btn-secondary:hover {
+    background-color: #e0e0e0;
+  }

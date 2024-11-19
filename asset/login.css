@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+    --light-gray: #f5f6fa;
+    --dark-gray: #34495e;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .auth-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 350px;
+  }
+  .auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .auth-header h1 {
+    color: var(--primary-color);
+    margin: 0;
+  }
+  .auth-tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .auth-tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .auth-tab.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .auth-form {
+    display: none;
+  }
+  .auth-form.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+  }
+  .form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  .auth-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .auth-button:hover {
+    background-color: #2980b9;
+  }
+  .forgot-password {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .forgot-password a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  .error-message {
+    color: var(--danger-color);
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+  }

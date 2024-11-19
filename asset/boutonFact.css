@@ -1,0 +1,53 @@
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 6px; /* Rembourrage réduit */
+        border-radius: 4px; /* Coins arrondis */
+        color: #333; /* Couleur de texte gris foncé */
+        font-weight: bold; /* Texte en gras */
+        text-decoration: none; /* Pas de soulignement */
+        transition: transform 0.2s; /* Effet de transition */
+        margin: 0 3px; /* Espacement entre les boutons */
+        font-size: 0.8rem; /* Taille de police plus petite */
+        border: 1px solid transparent; /* Bordure transparente par défaut */
+    }
+
+    /* État normal des boutons */
+    .btn-modifier {
+        border: 1px solid #007bff; /* Bordure bleue pour le bouton Modifier */
+    }
+
+    .btn-supprimer {
+        border: 1px solid #dc3545; /* Bordure rouge pour le bouton Supprimer */
+    }
+
+    .btn-view {
+        border: 1px solid #28a745; /* Bordure verte pour le bouton Voir */
+    }
+
+    /* Effets au survol */
+    .btn:hover {
+        transform: translateY(-1px); /* Légère élévation */
+        background-color: #f0f0f0; /* Couleur de fond neutre au survol */
+    }
+
+    .btn-modifier:hover {
+        border-color: #0056b3; /* Bordure bleue plus foncée au survol */
+    }
+
+    .btn-supprimer:hover {
+        border-color: #c82333; /* Bordure rouge plus foncée au survol */
+    }
+
+    .btn-view:hover {
+        border-color: #218838; /* Bordure verte plus foncée au survol */
+    }
+
+    /* Icônes ajustées pour être encore plus petites */
+    .btn i {
+        margin-right: 2px; /* Espacement entre l'icône et le texte */
+        font-size: 0.8rem; /* Taille de l'icône réduite */
+    }
+

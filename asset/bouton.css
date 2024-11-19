@@ -1,0 +1,47 @@
+/* Style commun pour les boutons */
+a, button {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 2px;
+    margin: 5px;
+    border: none;
+    border-radius: 1px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Style pour le bouton Voir */
+.views-button {
+    background-color: #4CAF50; /* Vert */
+}
+
+.views-button:hover {
+    background-color: #45a049; /* Vert plus foncé au survol */
+}
+
+/* Style pour le bouton Modifier */
+.edit-button {
+    background-color: #2196F3; /* Bleu */
+}
+
+.edit-button:hover {
+    background-color: #1e88e5; /* Bleu plus foncé au survol */
+}
+
+/* Style pour le bouton Supprimer */
+.delete-button {
+    background-color: #f44336; /* Rouge */
+    color: white;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #e53935; /* Rouge plus foncé au survol */
+}
+
+/* Effet de clic */
+a:active, button:active {
+    transform: scale(0.95); /* Réduit légèrement la taille au clic */
+}
